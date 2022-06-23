@@ -1,8 +1,5 @@
 package com.example.managebookingsservice.service;
 
-
-//import com.example.managebookingsservice.domain.AppUser;
-
 import com.example.managebookingsservice.domain.AppUser;
 import com.example.managebookingsservice.domain.Book;
 import com.example.managebookingsservice.repository.AppUserRepository;
