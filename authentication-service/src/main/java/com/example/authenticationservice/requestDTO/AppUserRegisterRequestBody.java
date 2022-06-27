@@ -1,4 +1,4 @@
-package com.example.authenticationservice.request;
+package com.example.authenticationservice.requestDTO;
 
 import lombok.Data;
 

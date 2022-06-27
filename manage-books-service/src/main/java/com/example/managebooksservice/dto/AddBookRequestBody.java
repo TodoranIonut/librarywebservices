@@ -1,4 +1,4 @@
-package com.example.managebooksservice.dao;
+package com.example.managebooksservice.dto;
 
 import lombok.Data;
 

@@ -1,6 +1,6 @@
 package com.example.managebooksservice.controller;
 
-import com.example.managebooksservice.dao.AddBookRequestBody;
+import com.example.managebooksservice.dto.AddBookRequestBody;
 import com.example.managebooksservice.domain.Book;
 import com.example.managebooksservice.service.ManageBooksService;
 import com.sun.istack.NotNull;
@@ -32,12 +32,14 @@ public class ManageBooksController {
     @PostMapping("/save")
     public ResponseEntity<Book> addBook(@RequestBody AddBookRequestBody addRequest) {
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/book/save").toUriString());
-        return ResponseEntity.created(uri).body(booksService.saveBook(addRequest));
+        Book book = new Book(addRequest.getTitle(),addRequest.getAuthor());
+        return ResponseEntity.created(uri).body(booksService.addBook(book));
     }
 
     @PostMapping("/update/{idBook}")
     public ResponseEntity<Book> updateBook(@PathVariable @NotNull Integer idBook, @RequestBody @NotNull AddBookRequestBody addRequest) {
-        return ResponseEntity.ok().body(booksService.updateBook(idBook, addRequest));
+        Book book = new Book(addRequest.getTitle(),addRequest.getAuthor());
+        return ResponseEntity.ok().body(booksService.updateBook(idBook, book));
     }
 
     @DeleteMapping("/delete/{idBook}")

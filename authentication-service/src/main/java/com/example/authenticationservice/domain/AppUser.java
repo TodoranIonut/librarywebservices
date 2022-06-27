@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.awt.print.Book;
+import java.util.ArrayList;
 import java.util.Collection;
 
 @Data
@@ -30,4 +31,14 @@ public class AppUser {
     @ManyToMany(fetch = FetchType.EAGER)
     private Collection<Role> roles;
 
+    public AppUser(String username, String password, String email){
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.isAccountNonExpired = true;
+        this.isAccountNonLocked = true;
+        this.isCredentialsNonExpired = true;
+        this.isEnabled = true;
+        roles = new ArrayList<>();
+    }
 }
