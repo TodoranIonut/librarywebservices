@@ -1,0 +1,28 @@
+#debug: true
+#
+#server:
+#  port: 8083
+#
+#spring:
+#  application:
+#    name: manage-users-service
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/library
+#    username: root
+#    password: rootpassword
+#  jpa:
+#    show-sql: false
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+#
+#
+##  cloud:
+##    loadbalancer:
+##      ribbon:
+##        enable: false
+#
+#
+#

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="95b3846f-0b08-410a-ae96-6aa61ae11d9a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../api-gate-way/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-gate-way/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-gate-way/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-gate-way/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-gate-way/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-gate-way/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-gate-way/src/main/java/com/example/apigateway/ApiGateWayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-gate-way/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-gate-way/src/test/java/com/example/apigateway/ApiGateWayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-books-service/src/main/java/com/example/managebooksservice/consumer/BooksConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/src/main/java/com/example/manageusersservice/ManageUsersServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/src/main/java/com/example/manageusersservice/controller/ManageUsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/src/main/java/com/example/manageusersservice/domain/AppUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/src/main/java/com/example/manageusersservice/domain/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/src/main/java/com/example/manageusersservice/domain/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/src/main/java/com/example/manageusersservice/domain/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/src/main/java/com/example/manageusersservice/repository/AppUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/src/main/java/com/example/manageusersservice/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/src/main/java/com/example/manageusersservice/service/ManageUsersClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/src/main/java/com/example/manageusersservice/service/ManageUsersServiceImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../manage-users-service/src/test/java/com/example/manageusersservice/ManageUsersServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/apigateway/ApiGateWayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/apigateway/ApiGateWayApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../authentication-service/src/main/java/com/example/authenticationservice/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../authentication-service/src/main/java/com/example/authenticationservice/service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manage-bookings-service/src/main/java/com/example/managebookingsservice/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../manage-bookings-service/src/main/java/com/example/managebookingsservice/controller/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manage-bookings-service/src/main/java/com/example/managebookingsservice/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../manage-bookings-service/src/main/java/com/example/managebookingsservice/service/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manage-bookings-service/src/main/java/com/example/managebookingsservice/service/BookingServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../manage-bookings-service/src/main/java/com/example/managebookingsservice/service/BookingServiceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manage-books-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../manage-books-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manage-books-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../manage-books-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manage-books-service/src/test/java/com/example/managebooksservice/service/ManageBooksServiceImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../manage-books-service/src/test/java/com/example/managebooksservice/service/ManageBooksServiceImplementationTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2BCI4T6hfY3tEMSgn1JJ2Yc5d4W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.41724136" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95b3846f-0b08-410a-ae96-6aa61ae11d9a" name="Changes" comment="" />
+      <created>1656403450053</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656403450053</updated>
+      <workItem from="1656403451223" duration="176000" />
+      <workItem from="1656508424437" duration="538000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

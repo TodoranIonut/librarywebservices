@@ -15,6 +15,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import javax.servlet.http.HttpServletRequest;
@@ -38,35 +39,6 @@ public class AuthenticationController {
 
     private final AuthenticationService authenticationService;
 
-    @GetMapping("/users")
-    public ResponseEntity<List<AppUser>> getUsers(){
-        return ResponseEntity.ok().body(authenticationService.getAppUsers());
-    }
-
-    @PostMapping("/register")
-    public ResponseEntity<?> saveUser(@RequestBody @NotNull AppUserRegisterRequestBody form) {
-
-        if (authenticationService.isEmailAvailable(form.getEmail())) {
-            if (authenticationService.isUsernameAvailable(form.getUsername())) {
-                URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/auth/register").toUriString());
-                return ResponseEntity.created(uri).body(authenticationService.saveAppUser(form));
-            } else {
-                return ResponseEntity.status(HttpStatus.CONFLICT).body("Username is taken");
-            }
-        } else {
-            return ResponseEntity.status(HttpStatus.CONFLICT).body("Email is taken");
-        }
-    }
-
-    @PostMapping("/add/role")
-    public ResponseEntity<?> addRoleToUser(@RequestBody AddRoleToUserRequestBody form) {
-        if (authenticationService.isUsernameAvailable(form.getUsername())){
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Invalid user");
-        } else {
-            return ResponseEntity.ok().body(authenticationService.addRoleToUser(form.getRoleName(), form.getUsername()));
-        }
-    }
-
     @GetMapping("/token/refresh")
     public void refreshToken(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String authorizationHeader = request.getHeader(AUTHORIZATION);
@@ -79,7 +51,9 @@ public class AuthenticationController {
                 DecodedJWT decodedJWT = verifier.verify(refreshToken);
                 String username = decodedJWT.getSubject();
 
-                AppUser appUser = authenticationService.getUser(username);
+
+//                AppUser appUser = authenticationService.getUser(username);
+                AppUser appUser = ApiCall.getAppUserByUsername(username);
 
                 String accessToken = JWT.create()
                         .withSubject(appUser.getUsername())

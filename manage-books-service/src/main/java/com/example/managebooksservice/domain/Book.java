@@ -1,5 +1,6 @@
 package com.example.managebooksservice.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,11 +21,13 @@ public class Book {
     private Integer idBook;
     private String title;
     private String author;
-    private String status =  String.valueOf(AVAILABLE);
+    private String status = String.valueOf(AVAILABLE);
 
-    public Book(String title, String author){
+    @Column(name = "user_id")
+    private Integer idUser;
+
+    public Book(String title, String author) {
         this.title = title;
         this.author = author;
     }
-
 }

@@ -17,4 +17,20 @@ public interface ManageBooksService {
     Book findBookById(Integer idBook);
 
     Book findBookByTitle(String title);
+
+//    void removeAppUser(Integer idBook);
+
+    void reserveBookByUser(Integer idBook, Integer idUser);
+
+    void confirmBookReservation(Integer idBook);
+
+    void returnBook(Integer idBook);
+
+    void isBookBooked(Book book);
+
+    void isBookReserved(Book book);
+
+    void isUserAssigned(Book book);
+
+    void cancelBookReservation(Integer idBook);
 }
